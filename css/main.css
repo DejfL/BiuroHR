@@ -310,7 +310,7 @@ h6 {
 
 .navbar-inverse .navbar-nav>li.current>a {
     color: #e0c434;
-    background-color: #2f3238;
+    /* background-color: #2f3238; */
 }
 
 .navbar-inverse .navbar-nav>li>a:hover {
@@ -1633,4 +1633,43 @@ blockquote {
 
 #kontaktContainer {
     padding-top: 70px;
+}
+
+#logo img {
+    width: 90px;
+    height: auto;
+}
+
+nav {
+    margin: auto;
+    padding: 10px;
+}
+
+.oFirmie {
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+
+.d-inline {
+    display: inline;
+}
+
+@media (min-width: 992px) {
+    .service-block-col {
+        height: 100%;
+    }
+    .equal {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .flex {
+        box-sizing: border-box;
+    }
+}
+
+#kontakt {
+    background-color: #333439 !important;
 }

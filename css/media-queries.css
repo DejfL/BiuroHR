@@ -326,6 +326,18 @@
 	Mobile (Landscape) Design for a width of 480px
 ==============================================================*/
 
+@media (max-width: 576px) {
+    .carousel-caption img {
+        width: 80%;
+    }
+}
+
+@media (min-width: 576px) {
+    .carousel-caption img {
+        width: 30%;
+    }
+}
+
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     /* homepage slider */
     #slitSlider .carousel-caption h2 {
@@ -336,9 +348,6 @@
     }
     #slitSlider .carousel-caption a {
         font-size: 14px;
-    }
-    .carousel-caption img {
-        width: 50%;
     }
     /* navigation */
     .navbar-fixed-top {
