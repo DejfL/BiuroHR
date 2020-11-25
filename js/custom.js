@@ -5,9 +5,9 @@ jQuery(function($) {
     /*	Page Preloader
     /* ========================================================================= */
 
-    // window.onload = function () {
-    // 	document.getElementById('loading-mask').style.display = 'none';
-    // }
+    window.onload = function() {
+        document.getElementById('loading-mask').style.display = 'none';
+    }
 
     /* =========================================================================== */
     /*	FitVids js
@@ -84,14 +84,14 @@ jQuery(function($) {
         topSpacing: 0
     });
 
-    $('#nav').onePageNav({
-        currentClass: 'current',
-        changeHash: false,
-        scrollSpeed: 1500,
-        scrollThreshold: 0.5,
-        filter: '',
-        easing: 'easeInOutExpo'
-    });
+    // $('#nav').onePageNav({
+    //     currentClass: 'current',
+    //     changeHash: false,
+    //     scrollSpeed: 1500,
+    //     scrollThreshold: 0.5,
+    //     filter: '',
+    //     easing: 'easeInOutExpo'
+    // });
 
 
 
@@ -165,11 +165,11 @@ jQuery(function($) {
     /*	Twitter Feed
     /* ========================================================================= */
 
-    $(".tweet").twittie({
-        dateFormat: "%b. %d, %Y",
-        template: "{{tweet}}",
-        count: 1
-    });
+    // $(".tweet").twittie({
+    //     dateFormat: "%b. %d, %Y",
+    //     template: "{{tweet}}",
+    //     count: 1
+    // });
 
 
     /* ========================================================================= */
@@ -492,3 +492,47 @@ function parallaxInit() {
 $(window).bind("load", function() {
     parallaxInit()
 });
+
+$(".menuClick").click(function() {
+    var $id = $(this).attr('id');
+    var $headerHeight = $("#navigation").height();
+
+    $(".current").removeClass("current");
+    $(this).addClass("current");
+
+    $(".close").click();
+
+    if ($("#nav").hasClass("in")) {
+        $("#nav").removeClass("in");
+    }
+
+    if ($id == "1") {
+        $('html, body').animate({
+            scrollTop: $("#slitSlider").offset().top
+        }, 2000);
+    } else if ($id == "2") {
+        $('html, body').animate({
+            scrollTop: $("#about").offset().top - 105
+        }, 2000);
+    } else if ($id == "3") {
+        $('html, body').animate({
+            scrollTop: $("#uslugiKadrowe").offset().top - 105
+        }, 2000);
+    } else if ($id == "4") {
+        $('html, body').animate({
+            scrollTop: $("#uslugiPlacowe").offset().top - 105
+        }, 2000);
+    } else if ($id == "5") {
+        $('html, body').animate({
+            scrollTop: $("#legalizacjaPobytuCudzoziemcow").offset().top - 105
+        }, 2000);
+    } else if ($id == "6") {
+        $('html, body').animate({
+            scrollTop: $("#audytKsiegowosc").offset().top - 105
+        }, 2000);
+    } else if ($id == "7") {
+        $('html, body').animate({
+            scrollTop: $("#Kontakt").offset().top - 105
+        }, 2000);
+    }
+})

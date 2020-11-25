@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html lang="pl" class="no-js">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -10,6 +10,7 @@
     <title>Biuro HR - kadry i płace</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Biuro-Hr, BiuroHR, Anna, Bociąga, Outsourcing kadrowo-płacowy, Kadry, Płace, Księgowość, Panki, Audyt, Ryczałt, Legalizacja pobytu cudzoziemców, Usługi płacowe">
 
     <link rel="shortcut icon" type="" href="img/ikona.ico" />
 
@@ -32,11 +33,11 @@
 </head>
 
 <body id="body">
-    <!-- <div id="loading-mask">
-			<div class="loading-img">
-				<img alt="Meghna Preloader" src="img/preloader.gif"  />
-			</div>
-		</div> -->
+    <div id="loading-mask">
+        <div class="loading-img">
+            <img alt="Meghna Preloader" src="img/preloader.gif" />
+        </div>
+    </div>
 
     <section id="home">
 
@@ -62,7 +63,7 @@
                             <div>
                                 <h2 class="heading animated fadeInDown">Usłgui</h2>
                                 <h3 class="animated fadeInUp">Sprawdź co oferujemy</h3>
-                                <a class="btn btn-gold animated fadeInUp buttonFront" id="uslugiFront">Więcej</a>
+                                <a class="btn btn-gold animated fadeInUp buttonFront" id="uslugiFront" href="#Uslugi">Więcej</a>
                             </div>
                         </div>
                     </div>
@@ -75,7 +76,7 @@
                             <div>
                                 <h2 class="heading animated fadeInRight">KONTAKT</h2>
                                 <h3 class="animated fadeInLeft">Skontaktuj się z nami!</h3>
-                                <a class="btn btn-gold animated fadeInUp buttonFront" id="kontaktFront">Więcej</a>
+                                <a class="btn btn-gold animated fadeInUp buttonFront" id="kontaktFront" href="#Kontakt">Więcej</a>
                             </div>
                         </div>
                     </div>
@@ -116,12 +117,28 @@
                 </a>
             </div>
 
-            <nav class="collapse navbar-collapse navbar-right" role="Navigation">
+            <nav id="nav" class="collapse navbar-collapse navbar-right" role="Navigation">
                 <ul id="nav" class="nav navbar-nav align-middle">
-                    <li class="current"><a href="#body">Strona główna</a></li>
-                    <li><a href="#about">O Firmie</a></li>
-                    <li><a href="#Uslugi">Usługi</a></li>
-                    <li><a href="#Kontakt">Kontakt</a></li>
+                    <li id="1" class="current menuItem menuClick">Strona główna</li>
+                    <li id="2" class="menuItem menuClick">O Firmie</li>
+
+                    <li class="menuItemDropLi">
+                        <div class="dropdown">
+                            <button class="dropbtn">Usługi
+                                  <i class="fa fa-caret-down"></i>
+                                </button>
+                            <div class="dropdown-content">
+                                <ul>
+                                    <li id="3" class="menuDrop menuClick">Usługi kadrowe</li>
+                                    <li id="4" class="menuDrop menuClick">Usługi płacowe</li>
+                                    <li id="5" class="menuDrop menuClick">Legalizacja pobytu cudzoziemców</li>
+                                    <li id="6" class="menuDrop menuClick">Audyt</li>
+                                    <li id="7" class="menuDrop menuClick">Ksiegowość</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="7" class="menuItem menuClick">Kontakt</li>
                 </ul>
             </nav>
 
@@ -183,41 +200,45 @@
         </div>
     </section>
 
-    <section id="Uslugi">
-        <section id="main-features">
-            <div class="container">
-                <div class="title text-center wow fadeIn" data-wow-duration="1500ms">
-                    <h2><span class="color">Usługi</span></h2>
-                    <div class="border"></div>
-                </div>
+    <section id="uslugi">
+        <section id="uslugiKadrowe">
+            <section id="main-features">
 
-                <article class="wow fadeInUp" data-wow-duration="500ms">
-                    <div class="service-block text-left">
-                        <div class="service-icon text-left">
-                            <i class="fa fa-archive fa-3x d-inline "></i>
-                            <h3 class="text-left d-inline">Usługi kadrowe</h3>
-                        </div>
-
-                        <ul class="disc" class="text-left">
-                            <li><a>
-                                Prowadzenie akt osobowych
-                            </a></li>
-                            <li><a>Przygotowanie dokumentacji kadrowej</a></li>
-                            <li><a>Szeroki zakres raportowania</a></li>
-                            <li><a>Prowadzenie ewidencji urlopów </a></li>
-                            <li><a>Prowadzenie ewidencji czasu pracy</a></li>
-                            <li><a>Sprawozdawczość GUS</a></li>
-                            <li><a>Koordynacja szkoleń BHP , badań lekarskich, kończących się umów</a></li>
-                            <li><a>Wystawianie świadectw pracy</a></li>
-                            <li><a>Elektroniczne akta osobowe</a></li>
-                            <li><a>Zgłaszanie pracownika i członków ich rodzin do ZUS</a></li>
-                            <li><a>Bieżąca kontrola wszelkich  zmian prawnych mających wpływ na zobowiązania klienta</a></li>
-                        </ul>
+                <div class="container">
+                    <div class="title text-center wow fadeIn" data-wow-duration="1500ms">
+                        <h2><span class="color">Usługi</span></h2>
+                        <div class="border"></div>
                     </div>
-                </article>
 
+
+                    <article class="wow fadeInUp" data-wow-duration="500ms">
+                        <div class="service-block text-left">
+                            <div class="service-icon text-left">
+                                <i class="fa fa-archive fa-3x d-inline "></i>
+                                <h3 class="text-left d-inline">Usługi kadrowe</h3>
+                            </div>
+
+                            <ul class="disc" class="text-left">
+                                <li>
+                                    <a>
+                                    Prowadzenie akt osobowych
+                                </a>
+                                </li>
+                                <li><a>Przygotowanie dokumentacji kadrowej</a></li>
+                                <li><a>Szeroki zakres raportowania</a></li>
+                                <li><a>Prowadzenie ewidencji urlopów </a></li>
+                                <li><a>Prowadzenie ewidencji czasu pracy</a></li>
+                                <li><a>Sprawozdawczość GUS</a></li>
+                                <li><a>Koordynacja szkoleń BHP , badań lekarskich, kończących się umów</a></li>
+                                <li><a>Wystawianie świadectw pracy</a></li>
+                                <li><a>Elektroniczne akta osobowe</a></li>
+                                <li><a>Zgłaszanie pracownika i członków ich rodzin do ZUS</a></li>
+                                <li><a>Bieżąca kontrola wszelkich  zmian prawnych mających wpływ na zobowiązania klienta</a></li>
+                            </ul>
+                        </div>
+                    </article>
+            </section>
             </div>
-
         </section>
 
         <section id="counter" class="parallax-section">
@@ -275,29 +296,31 @@
 
         </section>
 
-        <section id="main-features">
-            <div class="container">
-                <article class="wow fadeInUp" data-wow-duration="500ms">
-                    <div class="service-block text-left">
-                        <div class="service-icon text-left">
-                            <i class="fa fa-money fa-3x d-inline"></i>
-                            <h3 class="text-left d-inline">Usługi płacowe</h3>
-                        </div>
-                        <p>Outsourcing płac obejmuje pełną obsługę płacową w tym:</p>
+        <section id="uslugiPlacowe">
+            <section id="main-features">
+                <div class="container">
+                    <article class="wow fadeInUp" data-wow-duration="500ms">
+                        <div class="service-block text-left">
+                            <div class="service-icon text-left">
+                                <i class="fa fa-money fa-3x d-inline"></i>
+                                <h3 class="text-left d-inline">Usługi płacowe</h3>
+                            </div>
+                            <p>Outsourcing płac obejmuje pełną obsługę płacową w tym:</p>
 
-                        <ul class="disc" class="text-left">
-                            <li><a>Naliczanie wynagrodzeń</a></li>
-                            <li><a>Deklaracje ZUS, PIT</a></li>
-                            <li><a>Sprawozdawczość GUS</a></li>
-                            <li><a>Szeroki zakres raportów</a></li>
-                            <li><a>Kontakty z urzędami, komornikami</a></li>
-                            <li><a>Obsługa kontroli z różnych urzędów</a></li>
-                            <li><a>Wystawianie zaświadczeń</a></li>
-                            <li><a>Prowadzenie PPK</a></li>
-                        </ul>
-                    </div>
-                </article>
-            </div>
+                            <ul class="disc" class="text-left">
+                                <li><a>Naliczanie wynagrodzeń</a></li>
+                                <li><a>Deklaracje ZUS, PIT</a></li>
+                                <li><a>Sprawozdawczość GUS</a></li>
+                                <li><a>Szeroki zakres raportów</a></li>
+                                <li><a>Kontakty z urzędami, komornikami</a></li>
+                                <li><a>Obsługa kontroli z różnych urzędów</a></li>
+                                <li><a>Wystawianie zaświadczeń</a></li>
+                                <li><a>Prowadzenie PPK</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </section>
         </section>
 
         <section id="partnerzy" class="parallax-section">
@@ -330,80 +353,81 @@
             </div>
         </section>
 
-        <section id="main-features">
-            <div class="container">
-                <article class="wow fadeInUp" data-wow-duration="500ms">
-                    <div class="service-block text-left">
-                        <div class="service-icon text-left">
-                            <i class="fa fa-users fa-3x d-inline"></i>
-                            <h3 class="text-left d-inline">Legalizacja pobytu cudzoziemców</h3>
-                        </div>
+        <section id="legalizacjaPobytuCudzoziemcow">
+            <section id="main-features">
+                <div class="container">
+                    <article class="wow fadeInUp" data-wow-duration="500ms">
+                        <div class="service-block text-left">
+                            <div class="service-icon text-left">
+                                <i class="fa fa-users fa-3x d-inline"></i>
+                                <h3 class="text-left d-inline">Legalizacja pobytu cudzoziemców</h3>
+                            </div>
 
-                        <ul class="disc" class="text-left">
-                            <li><a>Rzetelne przygotowanie wszystkich niezbędnych dokumentów wymaganych do zatrudnienia cudzoziemców w Twojej Firmie</a></li>
-                            <li><a>Przygotowanie w ciągu 7 dni dokumentów niezbędnych do zatrudnienia cudzoziemców bezpośrednio w Państwa Firmie</a></li>
-                            <li><a>Pomoc w uzyskaniu przez cudzoziemców numeru PESEL niezbędnego do rozliczania PIT 11</a></li>
-                            <li><a>W zakres usługi wchodzi uzyskanie zezwolenia na podstawie: <br/>
-                                - oświadczenia o powierzeniu wykonywania pracy cudzoziemcowi z Urzędu Pracy <br/>
-                                - zezwolenie na pracę w tym informacji starosty<br/>
-                                - nr PESEL<br/>
-                                - zaproszenia dla nowych pracowników niezbędnych do wyrobienia wizy, wraz z wysyłką na Ukrainie 
-                            </a></li>
-                        </ul>
-                    </div>
-                </article>
-            </div>
+                            <ul class="disc" class="text-left">
+                                <li><a>Rzetelne przygotowanie wszystkich niezbędnych dokumentów wymaganych do zatrudnienia cudzoziemców w Twojej Firmie</a></li>
+                                <li><a>Przygotowanie w ciągu 7 dni dokumentów niezbędnych do zatrudnienia cudzoziemców bezpośrednio w Państwa Firmie</a></li>
+                                <li><a>Pomoc w uzyskaniu przez cudzoziemców numeru PESEL niezbędnego do rozliczania PIT 11</a></li>
+                                <li><a>W zakres usługi wchodzi uzyskanie zezwolenia na podstawie: <br/>
+                                        - oświadczenia o powierzeniu wykonywania pracy cudzoziemcowi z Urzędu Pracy <br/>
+                                        - zezwolenie na pracę w tym informacji starosty<br/>
+                                        - nr PESEL<br/>
+                                        - zaproszenia dla nowych pracowników niezbędnych do wyrobienia wizy, wraz z wysyłką na Ukrainie 
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </section>
         </section>
 
-        <section id="main-features">
-            <div class="container">
-                <article class="wow fadeInUp" data-wow-duration="500ms">
-                    <div class="row equal">
-                        <div class=" col-md-6 ">
-                            <div class="service-block service-block-col text-left ">
-                                <div class="service-icon text-left ">
-                                    <i class="fa fa-list fa-3x d-inline"></i>
-                                    <h3 class="text-left d-inline">Audyt</h3>
-                                </div>
+        <section id="audytKsiegowosc">
+            <section id="main-features">
+                <div class="container">
+                    <article class="wow fadeInUp" data-wow-duration="500ms">
+                        <div class="row equal">
+                            <div class=" col-md-6 ">
+                                <div class="service-block service-block-col text-left ">
+                                    <div class="service-icon text-left ">
+                                        <i class="fa fa-list fa-3x d-inline"></i>
+                                        <h3 class="text-left d-inline">Audyt</h3>
+                                    </div>
 
-                                <ul class="disc " class="text-left ">
-                                    <li><a>Kontrola teczek akt osobowych i przygotowanie raportu na temat zgodności z przepisami prawa pracy</a></li>
-                                    <li><a>Weryfikacja list płac pod względem naliczania i rozliczania wynagrodzeń</a></li>
-                                </ul>
+                                    <ul class="disc " class="text-left ">
+                                        <li><a>Kontrola teczek akt osobowych i przygotowanie raportu na temat zgodności z przepisami prawa pracy</a></li>
+                                        <li><a>Weryfikacja list płac pod względem naliczania i rozliczania wynagrodzeń</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6 ">
+                                <div class="service-block service-block-col text-left ">
+                                    <div class="service-icon text-left ">
+                                        <i class="fa fa-book fa-3x d-inline"></i>
+                                        <h3 class="text-left ">Księgowość</h3>
+                                    </div>
+
+                                    <ul class="disc " class="text-left ">
+                                        <li><a>Książka Przychodów i Rozchodów (KPiR) </a></li>
+                                        <li><a>Ryczałt</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-6 ">
-                            <div class="service-block service-block-col text-left ">
-                                <div class="service-icon text-left ">
-                                    <i class="fa fa-book fa-3x d-inline"></i>
-                                    <h3 class="text-left ">Księgowość</h3>
-                                </div>
-
-                                <ul class="disc " class="text-left ">
-                                    <li><a>Książka Przychodów i Rozchodów (KPiR) </a></li>
-                                    <li><a>Ryczałt</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-            </div>
+                    </article>
+                </div>
+            </section>
         </section>
+
 
         <section id="testimonial" class="parallax-section">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-
                         <div class="title text-center wow fadeIn" data-wow-duration="500ms">
                             <h2><span class="color">Opinie Klientów</span></h2>
                             <div class="border"></div>
                         </div>
-
                         <div id="testimonials" class="wow fadeInUp" data-wow-duration="500ms" data-wow-delay="100ms">
-
                             <div class="item text-center">
-
                                 <div class="client-info">
                                     <div class="client-meta">
                                         <h3>Dawid Szymczak</h3>
@@ -413,13 +437,9 @@
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, ex, cupiditate, error, suscipit saepe sed ea consequuntur inventore sequi sit illo.</p>
                                     </div>
                                 </div>
-
                             </div>
-
                             <div id="testimonials" class="wow fadeInUp" data-wow-duration="500ms" data-wow-delay="100ms">
-
                                 <div class="item text-center">
-
                                     <div class="client-info">
                                         <div class="client-meta">
                                             <h3>Klaudia Drab</h3>
@@ -429,15 +449,10 @@
                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, ex, cupiditate, error, suscipit saepe sed ea consequuntur inventore sequi sit illo.</p>
                                         </div>
                                     </div>
-
                                 </div>
-
                             </div>
-
                             <div id="testimonials" class="wow fadeInUp" data-wow-duration="500ms" data-wow-delay="100ms">
-
                                 <div class="item text-center">
-
                                     <div class="client-info">
                                         <div class="client-meta">
                                             <h3>Bogdan Melka</h3>
@@ -447,29 +462,23 @@
                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, ex, cupiditate, error, suscipit saepe sed ea consequuntur inventore sequi sit illo.</p>
                                         </div>
                                     </div>
-
                                 </div>
-
                             </div>
                         </div>
-                        <!-- end testimonial wrapper -->
                     </div>
-                    <!-- end col lg 12 -->
                 </div>
-                <!-- End row -->
             </div>
-            <!-- End container -->
         </section>
-        <!-- End Section -->
 
         <section id="main-features">
             <div class="container">
                 <article class="wow fadeInUp" data-wow-duration="500ms">
                     <div class="service-block text-left">
                         <div class="service-icon text-left">
-                            <i class="fa fa-info fa-5x"></i>
+                            <i class="fa fa-info fa-3x d-inline"></i>
+                            <h3 class="text-left d-inline">Dodatkowe usługi</h3>
                         </div>
-                        <h3 class="text-left">Dodatkowe usługi</h3>
+
                         <ul class="disc" class="text-left">
                             <li><a>Dyżury w siedzibie klienta </a></li>
                             <li><a>Odbiór dokumentów przez biuro w siedzibie Klienta</a></li>
@@ -482,12 +491,9 @@
                 </article>
             </div>
         </section>
-
     </section>
 
-
-
-    <section id="Kontakt">
+    <section id="Kontakt" class="bg-one">
         <div class="container" id="kontaktContainer">
             <div class="row">
 
@@ -507,7 +513,7 @@
 
                         <div class="con-info clearfix">
                             <i class="fa fa-phone fa-lg"></i>
-                            <span>Telefon: 796 407 200</span>
+                            <span>Telefon: 729 922 935</span>
                         </div>
 
                         <div class="con-info clearfix">
@@ -560,7 +566,7 @@
 
     </section>
 
-    <footer id="footer" class="bg-one">
+    <footer id="footer">
 
 
         <div class="copyright text-center">
@@ -585,8 +591,8 @@
     <script src="js/easyPieChart.js"></script>
     <script src="js/jquery.easing-1.3.pack.js"></script>
     <script src="js/tweetie.min.js"></script>
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-    <script src="js/jquery.nav.js"></script>
+    <!-- <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script> -->
+    <!-- <script src="js/jquery.nav.js"></script> -->
     <script src="js/jquery.sticky.js"></script>
     <script src="js/jquery.countTo.js"></script>
     <script src="js/wow.min.js"></script>
@@ -594,6 +600,19 @@
     <script src="js/grid.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/front.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6KZ03W4VQR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-6KZ03W4VQR');
+    </script>
 </body>
 
 </html>
