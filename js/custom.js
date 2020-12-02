@@ -526,11 +526,15 @@ $(".menuClick").click(function() {
         $('html, body').animate({
             scrollTop: $("#legalizacjaPobytuCudzoziemcow").offset().top - 105
         }, 2000);
-    } else if ($id == "6") {
+    } else if ($id == "6" || $id == "7") {
         $('html, body').animate({
             scrollTop: $("#audytKsiegowosc").offset().top - 105
         }, 2000);
-    } else if ($id == "7") {
+    } else if ($id == "8") {
+        $('html, body').animate({
+            scrollTop: $("#partnerzy").offset().top - 105
+        }, 2000);
+    } else if ($id == "9") {
         $('html, body').animate({
             scrollTop: $("#Kontakt").offset().top - 105
         }, 2000);
