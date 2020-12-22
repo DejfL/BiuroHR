@@ -392,14 +392,29 @@ h6 {
     background-image: none, url(../img/partnerzy/PerfectoLubliniec/perfectoLubliniec.jpg);
 }
 
-#denario {
-    padding: 70px 0;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    /* background: linear-gradient(to bottom, rgba(22, 22, 22, .3) 0, rgba(22, 22, 22, .7) 75%, #161616 100%), url(../img/partnerzy/PerfectoLubliniec/perfectoLubliniec.jpg); */
-    background-image: none, url(../img/partnerzy/denario/grafika.png);
+@media (max-width:992px) {
+    #denario {
+        padding: 70px 0;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        /* background: linear-gradient(to bottom, rgba(22, 22, 22, .3) 0, rgba(22, 22, 22, .7) 75%, #161616 100%), url(../img/partnerzy/PerfectoLubliniec/perfectoLubliniec.jpg); */
+        background-image: none, url(../img/partnerzy/denario/grafika.png);
+    }
+}
+
+@media (min-width:992px) {
+    #denario {
+        padding: 70px 0;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        min-height: 500px;
+        /* background: linear-gradient(to bottom, rgba(22, 22, 22, .3) 0, rgba(22, 22, 22, .7) 75%, #161616 100%), url(../img/partnerzy/PerfectoLubliniec/perfectoLubliniec.jpg); */
+        background-image: none, url(../img/partnerzy/denario/grafika.png);
+    }
 }
 
 .parallax {
@@ -1730,8 +1745,11 @@ nav {
     display: inline-block;
 } */
 
-.tekstPartnera {
+.tekstPartneraMargin {
     margin-top: 5rem;
+}
+
+.tekstPartnera {
     font-size: 20px;
     font-weight: 500;
     color: white !important;
@@ -1801,6 +1819,10 @@ nav {
 
 .textFooter {
     font-size: 20px;
-    color: #e0c434;
+    color: white;
     font-weight: 300;
+}
+
+.textFooter:hover {
+    color: #e0c434;
 }

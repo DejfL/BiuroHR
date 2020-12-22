@@ -208,14 +208,14 @@
     background: rgba(255, 255, 255, .8)
 }
 
-#home .bg-img-1 {
-    background-image: url(../img/home/kalkulator.webp)
-}
-
-#home .bg-img-2 {
+#home .bg-img-3 {
     background-image: url(../img/home/dlugopis.webp)
 }
 
-#home .bg-img-3 {
+#home .bg-img-2 {
+    background-image: url(../img/home/kalkulator.webp)
+}
+
+#home .bg-img-1 {
     background-image: url(../img/home/biurko.webp)
 }
