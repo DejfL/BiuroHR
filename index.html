@@ -518,37 +518,37 @@
                 </div>
 
                 <div class="contact-form col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
-                    <form id="contact-form" method="post" action="sendmail.php" role="form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Nazwa" class="form-control" name="name" id="name">
+                        <div class="validation collapse" id="validationName">Podaj minimun 4 znaki</div>
+                    </div>
 
-                        <div class="form-group">
-                            <input type="text" placeholder="Nazwa" class="form-control" name="name" id="name">
-                        </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" class="form-control" name="email" id="email" data-rule="email" data-msg="Podaj poprawny email">
+                        <div class="validation collapse" id="validationEmail">Nieporawny email</div>
+                    </div>
 
-                        <div class="form-group">
-                            <input type="email" placeholder="Email" class="form-control" name="email" id="email">
-                        </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Temat" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Podaj minimum 8 znaków">
+                        <div class="validation collapse" id="validationSubject">Podaj minimum 4 znaki</div>
+                    </div>
 
-                        <div class="form-group">
-                            <input type="text" placeholder="Temat" class="form-control" name="subject" id="subject">
-                        </div>
+                    <div class="form-group">
+                        <textarea rows="6" placeholder="Wiadomość" class="form-control" name="message" id="message" data-rule="required" data-msg="Napisz wiadomość"></textarea>
+                        <div class="validation collapse" id="validationMessage">Treść nie może być pusta</div>
+                    </div>
 
-                        <div class="form-group">
-                            <textarea rows="6" placeholder="Wiadomość" class="form-control" name="message" id="message"></textarea>
-                        </div>
+                    <div id="mail-success" class="success">
 
-                        <div id="mail-success" class="success">
+                    </div>
 
-                        </div>
+                    <div id="mail-fail" class="error">
 
-                        <div id="mail-fail" class="error">
+                    </div>
 
-                        </div>
-
-                        <div id="cf-submit">
-                            <input type="submit" id="contact-submit" class="btn btn-transparent" value="Wyśli">
-                        </div>
-
-                    </form>
+                    <div id="cf-submit">
+                        <input type="submit" class="btn btn-transparent SendEmail" value="Wyśli">
+                    </div>
                 </div>
             </div>
         </div>
@@ -556,12 +556,9 @@
     </section>
 
     <footer id="footer">
-
-
         <div class="copyright text-center">
             <p>© FotoGeek 2020 | Design &amp; Code <a href="http://www.fotogeek.pl"> FotoGeek</a></p>
         </div>
-
     </footer>
 
     <a href="javascript:;" id="scrollUp">
@@ -589,6 +586,8 @@
     <script src="js/grid.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/front.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/emailsend.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6KZ03W4VQR"></script>
