@@ -1,6 +1,21 @@
 $('.SendEmail').click(function() {
-    submitForm();
+    DaneOsobowe();
 });
+
+function DaneOsobowe() {
+    Swal.fire({
+        title: 'Zgoda na przetważanie danych osobowych',
+        text: "Wyrażam zgodę na przetwarzanie danych osobowych zgodnie z obecnie obowiązującym prawem, w związku z wysyłaniem zapytania przez formularz kontaktowy. Podanie przedmiotowych danych jest wyłącznie dobrowolne, jednak niezbędne do przetworzenia zapytania. Moje dane osobowe będą przetwarzane do czasu cofnięcia zgody lub przez okres niezbędny do ustalenia, dochodzenia lub obrony roszczeń. Oświadczam, że zostałem poinformowany, iż przysługuje mi w każdym czasie prawo dostępu do swoich danych, możliwości ich sprostowania, przeniesienia danych, żądania usunięcia lub ograniczenie przetwarzania danych osobowych, sprzeciwu (gdy podstawą przetwarzania jest prawnie uzasadniony interes administratora), lub cofnięcia zgody. Administratorem danych osobowych jest BIURO-HR Usługi Kadrowo-Płacowe Anna Bociąga 42-141 Przystajń Górki 12, NIP 574-190-86-69,. Nasze dane kontaktowe: e-mail: a.bociaga@biuro-hr.pl , telefon: 729-922-935",
+        icon: 'warning',
+        confirmButtonColor: '#e0c434',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Zatwierdź',
+    }).then((result) => {
+        if (result.isConfirmed) {
+            //submitForm();
+        }
+    })
+}
 
 function submitForm() {
     // Initiate Variables With Form Content

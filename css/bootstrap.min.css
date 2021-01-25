@@ -7363,3 +7363,7 @@ button.close {
         display: none!important;
     }
 }
+
+.swal2-popup {
+    width: 60rem !important;
+}
